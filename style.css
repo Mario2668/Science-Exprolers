@@ -1,29 +1,39 @@
             body{
-                font-family: Georgia, 'Times New Roman', Times, serif;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                margin: 0;
+                padding: 0;
             }
             .nav{
-                background-color: #4357af;
-                color: white;
+                background-color: rgb(34, 34, 34);
+                color: #eeeeee;
                 text-align: center;
                 padding: 20px;
                 margin: 0 auto;
                 size: 45px;
+                border-bottom: solid 5px #0dcc73;
             }
             .nav a {
-                color: white;
+                color: #eeeeee;
                 text-decoration: none;
-                background-color: #4357af;
+                background-color: rgb(34, 34, 34);
                 text-align: center;
                 margin: 0 15px;
                 padding: 8px 16px;
                 font-weight: bold;
                 size: 40px;
                 display: inline-block;
-                transition: background-color 0.3s ease;
+                transition: all 0.3s ease;
+                border-bottom: 2px solid transparent;
             }
             .nav a:hover{
-                background-color: #b6b1b15e;
-                border-radius: 5px;
+                color: #0dcc73;
+                border-bottom: #0dcc73 solid 2px;
+            }
+            .nav h1{
+                margin: 0;
+                font-size: 2.2rem;
+                letter-spacing: 2px;
+                color: #0dcc73;
             }
             table{
                 width: 100%;
@@ -41,15 +51,24 @@
                 box-shadow: 0px 0px 8px rgb(149, 147, 147);
                 max-width: 1000px;
                 border-radius: 6px;
+                transition: transform 0.3s ease;
+                border-left: #0dcc73 solid 8px;
+            }
+            .content:hover{
+                transform: translateY(-4px);
+                transform: scale(+1.02);
             }
             p{
                 line-height: 1.5;
             }
             h2{
-                border-bottom: 2px solid #186da5;
+                border-bottom: 2px solid #0dcc73;
             }
             a {
                 text-decoration: none;
                 font-weight: bold;
-                color: #186da5;
+                color: #00adb5;
+            }
+            a:hover{
+                color: #007c82;
             }
