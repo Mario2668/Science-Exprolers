@@ -22,7 +22,7 @@
                 font-weight: bold;
                 size: 40px;
                 display: inline-block;
-                transition: all 0.3s ease;
+                transition: all 0.3s ease-in-out;
                 border-bottom: 2px solid transparent;
             }
             .nav a:hover{
@@ -67,8 +67,8 @@
             a {
                 text-decoration: none;
                 font-weight: bold;
-                color: #00adb5;
+                color: #0dcc73;
             }
             a:hover{
-                color: #007c82;
+                color: #0d804a;
             }
