@@ -1,14 +1,199 @@
-<html>
-    <head>
-        <style>
-            p {
-                text-align: center;
-                border: 2px solid black;
-                outline: 3px solid blue;
-            }
-        </style>
-    </head>
-    <body>
-        <p>Element</p>
-    </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SciSpectra Explorer | Home</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #121212;
+            color: #e0e0e0;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        .header {
+            background-color: #1a1a1a;
+            padding: 1.5rem;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .logo {
+            color: #4CAF50;
+            font-size: 1.8rem;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        .nav-links {
+            display: flex;
+            gap: 1.5rem;
+        }
+        .nav-links a {
+            color: #e0e0e0;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        .nav-links a:hover {
+            color: #4CAF50;
+        }
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('http://static.photos/science/1200x630/42');
+            background-size: cover;
+            background-position: center;
+            height: 70vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 2rem;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: #4CAF50;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin-bottom: 2rem;
+        }
+        .btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border: none;
+            border-radius: 4px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            text-decoration: none;
+        }
+        .btn:hover {
+            background-color: #3e8e41;
+        }
+        .branches {
+            max-width: 1200px;
+            margin: 3rem auto;
+            padding: 0 2rem;
+        }
+        .branches h2 {
+            font-size: 2rem;
+            color: #4CAF50;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+        .branch-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        .branch-card {
+            background-color: #1e1e1e;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s;
+        }
+        .branch-card:hover {
+            transform: translateY(-5px);
+        }
+        .branch-img {
+            height: 200px;
+            background-size: cover;
+            background-position: center;
+        }
+        .branch-content {
+            padding: 1.5rem;
+        }
+        .branch-content h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: #4CAF50;
+        }
+        .footer {
+            background-color: #1a1a1a;
+            padding: 2rem;
+            text-align: center;
+            margin-top: 3rem;
+        }
+        .footer p {
+            margin: 0.5rem 0;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="nav">
+            <a href="index.html" class="logo">SciSpectra 🔬</a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="physics.html">Physics</a>
+                <a href="chemistry.html">Chemistry</a>
+                <a href="biology.html">Biology</a>
+                <a href="astronomy.html">Astronomy</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <h1>Explore the Wonders of Science</h1>
+        <p>Discover groundbreaking discoveries across various scientific disciplines that are shaping our understanding of the universe and our place within it.</p>
+        <a href="#branches" class="btn">Explore Branches</a>
+    </section>
+
+    <section id="branches" class="branches">
+        <h2>Scientific Disciplines</h2>
+        <div class="branch-grid">
+            <div class="branch-card">
+                <div class="branch-img" style="background-image: url('http://static.photos/technology/640x360/1');"></div>
+                <div class="branch-content">
+                    <h3>Physics</h3>
+                    <p>From quantum mechanics to relativity, explore the fundamental laws governing our universe.</p>
+                    <a href="physics.html" class="btn" style="display: inline-block; margin-top: 1rem;">Learn More</a>
+                </div>
+            </div>
+            <div class="branch-card">
+                <div class="branch-img" style="background-image: url('http://static.photos/science/640x360/2');"></div>
+                <div class="branch-content">
+                    <h3>Chemistry</h3>
+                    <p>Discover the elements, compounds, and reactions that form the building blocks of matter.</p>
+                    <a href="chemistry.html" class="btn" style="display: inline-block; margin-top: 1rem;">Learn More</a>
+                </div>
+            </div>
+            <div class="branch-card">
+                <div class="branch-img" style="background-image: url('http://static.photos/nature/640x360/3');"></div>
+                <div class="branch-content">
+                    <h3>Biology</h3>
+                    <p>Explore the complex web of life from microscopic organisms to entire ecosystems.</p>
+                    <a href="biology.html" class="btn" style="display: inline-block; margin-top: 1rem;">Learn More</a>
+                </div>
+            </div>
+            <div class="branch-card">
+                <div class="branch-img" style="background-image: url('http://static.photos/aerial/640x360/4');"></div>
+                <div class="branch-content">
+                    <h3>Astronomy</h3>
+                    <p>Journey through the cosmos to explore planets, stars, galaxies, and the mysteries of space.</p>
+                    <a href="astronomy.html" class="btn" style="display: inline-block; margin-top: 1rem;">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2023 SciSpectra Explorer. All rights reserved.</p>
+        <p>Exploring the wonders of science, one discovery at a time.</p>
+    </footer>
+</body>
 </html>
