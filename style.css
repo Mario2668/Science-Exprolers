@@ -1,74 +1,126 @@
-            body{
-                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-                margin: 0;
-                padding: 0;
-            }
-            .nav{
-                background-color: rgb(34, 34, 34);
-                color: #eeeeee;
-                text-align: center;
-                padding: 20px;
-                margin: 0 auto;
-                size: 45px;
-                border-bottom: solid 5px #0dcc73;
-            }
-            .nav a {
-                color: #eeeeee;
-                text-decoration: none;
-                background-color: rgb(34, 34, 34);
-                text-align: center;
-                margin: 0 15px;
-                padding: 8px 16px;
-                font-weight: bold;
-                size: 50px;
-                display: inline-block;
-                transition: all 0.3s ease-in-out;
-                border-bottom: 2px solid transparent;
-            }
-            .nav a:hover{
-                color: #0dcc73;
-                border-bottom: #0dcc73 solid 2px;
-            }
-            .nav h1{
-                margin: 0;
-                font-size: 2.2rem;
-                letter-spacing: 2px;
-                color: #0dcc73;
-            }
-            table{
-                width: 100%;
-                border-collapse: collapse;
-                text-align: center;
-            }
-            td {
-                size: 50px;
-                text-align: center;
-                width: 33.33%;
-            }
-            .content{
-                margin: 25px auto;
-                padding: 40px;
-                box-shadow: 0px 0px 8px rgb(149, 147, 147);
-                max-width: 1000px;
-                border-radius: 6px;
-                transition: transform 0.3s ease;
-                border-left: #0dcc73 solid 8px;
-            }
-            .content:hover{
-                transform: translateY(-4px);
-                transform: scale(+1.02);
-            }
-            p{
-                line-height: 1.5;
-            }
-            h2{
-                border-bottom: 2px solid #0dcc73;
-            }
-            a {
-                text-decoration: none;
-                font-weight: bold;
-                color: #0dcc73;
-            }
-            a:hover{
-                color: #0d804a;
-            }
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.nav {
+    background-color: #222;
+    color: #eee;
+    padding: 20px 0;
+    border-bottom: 5px solid #0dcc73;
+    text-align: center;
+}
+
+.nav h1 {
+    margin: 0 0 15px 0;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    color: #0dcc73;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: #eee;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    display: block;
+    transition: all 0.3s ease;
+    border-bottom: 2px solid transparent;
+}
+
+.nav-links a:hover {
+    color: #0dcc73;
+    border-bottom: 2px solid #0dcc73;
+}
+
+.content {
+    margin: 30px auto;
+    padding: 40px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    max-width: 1000px;
+    border-radius: 8px;
+    border-left: 8px solid #0dcc73;
+    transition: transform 0.3s ease;
+}
+
+.content:hover {
+    transform: translateY(-5px);
+}
+
+.content h2 {
+    color: #0dcc73;
+    border-bottom: 2px solid #0dcc73;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+}
+
+.content p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+.content ul, .content ol {
+    margin-left: 20px;
+}
+
+.content li {
+    margin-bottom: 10px;
+}
+
+.image-placeholder {
+    height: 200px;
+    background-color: #ddd;
+    margin: 20px 0;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-style: italic;
+    width: 500px;
+    border-radius: 6px;
+}
+
+a {
+    color: #0dcc73;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #0d804a;
+}
+
+/* Basic responsiveness */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+    }
+    .nav-links li {
+        margin: 5px 0;
+    }
+    .content {
+        margin: 20px;
+        padding: 20px;
+    }
+    .nav h1 {
+        font-size: 2rem;
+    }
+}
