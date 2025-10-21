@@ -58,6 +58,7 @@ body {
     border-radius: 8px;
     border-left: 8px solid #0dcc73;
     transition: transform 0.3s ease;
+    height: auto;
 }
 
 .content:hover {
@@ -86,7 +87,6 @@ body {
 
 .image-placeholder {
     height: 200px;
-    background-color: #ddd;
     margin: 20px 0;
     margin-left: 10px;
     margin-right: 10px;
@@ -95,6 +95,20 @@ body {
     justify-content: center;
     font-style: italic;
     width: 500px;
+    border-radius: 6px;
+}
+
+.image-placeholder_1 {
+    height: auto;
+    background-color: #ddd;
+    margin: 20px 0;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-style: italic;
+    width: 400px;
     border-radius: 6px;
 }
 
